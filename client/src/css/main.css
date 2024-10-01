@@ -1,0 +1,83 @@
+*{
+    font-family: font;
+}
+
+:root{
+    --light: #FFEAC5;
+    --pale : #FFDBB5;
+    --brown : #6C4E31;
+    --dark-brown : #603F26;
+}
+
+.main-img{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/coffee.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background-color:  var(--light);
+}
+.banner-section .txt{
+    top: 170px;
+    left: -400px;
+    color: #ffffff;
+    animation-name: titleAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.banner-section{
+    width: 100%;
+}
+.categories{
+    gap: 3rem;
+}
+.categories .link{
+    cursor: pointer;
+    color: var(--brown);
+}
+section{
+    padding: 5px;
+}
+.break{
+    height: 360px;
+}
+.product{
+    width: 150px;
+    height: 320px;
+    background-color: var(--pale);
+    padding: 0;
+}
+
+.product img{
+    height: 165px;
+    width: 150px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+.small{
+    font-size: 14px;
+}
+.details button{
+    height: 30px;
+    border : none;
+    background-color: var(--dark-brown);
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+@keyframes titleAnimation {
+    from{
+        left : -400px;
+    }
+    to{
+        left:10px;
+    }
+}
+@font-face {
+    font-family: font;
+    src: url(../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}

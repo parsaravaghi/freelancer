@@ -1,0 +1,28 @@
+.header .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.header{
+  width: 100%;
+  background-color: var(--brown);
+}
+
+.header .nav-link {
+  font-size: 18px;
+  margin-right: 20px;
+  color: aliceblue;
+}
+.search{
+  cursor: pointer;
+}
+.header .nav-link:hover {
+  color: var(--light);
+}
+.true{
+  width: 100%;
+
+}
+.false{
+  background-color: #603F26;
+}
