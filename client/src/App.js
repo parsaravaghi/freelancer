@@ -7,6 +7,9 @@ import Contact from './pages/Contact';
 import { useState } from 'react';
 import 'boxicons';
 import './css/main.css'
+import Addproject from './admin/Addproject';
+import Projects from './pages/Projects';
+import Login from './pages/login';
 
 function App() {
 
@@ -19,8 +22,11 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={<Main />}  />
+          <Route path='/login' element={<Login />}  />
           <Route path='/about' element={<About />}  />
           <Route path='/contact' element={<Contact />}  />
+          <Route path='/addproject' element={<Addproject />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='*' element={<><h1>not found</h1></>}  />
         </Routes>
       </BrowserRouter>

@@ -1,6 +1,8 @@
 import { Db } from "../Db/Db.js";
 
 // adding tables to database
-const projects = Db.collection("projects")
+const Project = Db.collection("projects")
+const User = Db.collection("users")
 
-export { projects }
+// export collections
+export { Project , User }

@@ -7,18 +7,23 @@ import axios from 'axios'
 function Main()
 {
     const [data , setData] = useState([])
-    // useEffect(() => {
-    //     Aos.init();
-    //     axios.get("http://127.0.0.1:8000/product").then(((res)=>setData(res.data.products))) 
-    //   }, []);
+    
       
     return(
         <>
             <div className="main-banner">
-                <div className="banner-section top-0 z-2 position-absolute">
+                <div className="banner-section z-2 ">
                     <div className=" main-img"></div>
-                    <div className="txt z-1 position-absolute">
-                        <h1>Welcome to our coffee shop</h1>
+                    <div className="center d-flex align-items-center justify-content-center" >
+                    <div className="txt z-1 overflow-hidden text-light position-absolute">
+                        <h2 className=' text-light'>وبسایت فرینسری و دور کاری فریلنسری ها</h2>
+                        <form className='form-asl'>
+                            <div className="form-group d-flex flex-column flex-md-row p-2">
+                                <input type="text" className="form-control mb-2 mb-md-0" id="formGroupExampleInput" placeholder="Example input" />
+                                <button style={{backgroundColor : "var(--blue)" , color : "white"}} className='btn'>جست و جو</button>
+                            </div>
+                        </form>
+                    </div>
                     </div>
                 </div>
                 <div className="break"></div>
