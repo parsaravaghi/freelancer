@@ -1,0 +1,32 @@
+.header .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.header{
+  width: 100%;
+  background-color: var(--dark-blue);
+  
+}
+
+.header .nav-link {
+  font-size: 18px;
+  margin-right: 20px;
+  color: var(--light);
+}
+.link{
+  text-decoration: none;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.search{
+  cursor: pointer;
+}
+
+.true{
+  width: 100%;
+
+}
+.false{
+  background-color: #603F26;
+}
